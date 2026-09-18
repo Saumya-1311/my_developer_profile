@@ -31,25 +31,35 @@ p {
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 12px;
     padding: 0;
+    margin-bottom: 30px;
 }
 
 .skills li {
-    background-color: #F0FDFA ;
+    background-color: #F0FDFA;
     color: #0F766E;
-    padding: 8px 15px;
+    padding: 10px 18px;
     border-radius: 20px;
     font-weight: bold;
     list-style: none;
+    transition: 0.2s;
+}
+
+.skills li:hover {
+    transform: translateY(-3px);
 }
 
 ul {
     color: #334155;
 }
+.goals {
+    padding-left: 20px;
+}
 
-.skills li:hover {
-    transform: translateY(-3px);
+.goals li {
+    margin-bottom: 10px;
+    color: #334155;
 }
 
 @media (max-width: 600px) {
@@ -68,4 +78,94 @@ ul {
     p {
         font-size: 16px;
     }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons a {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    border-bottom: 2px solid #F0FDFA;
+    border-radius: 15px;
+}
+
+.navbar h2 {
+    margin: 0;
+    color: #2e6e69;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0F766E;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #2e6e69;
+}
+
+.intro {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.buttons a {
+    background-color: #0F766E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buttons a:hover {
+    background-color: #2e6e69;
+}
+
+#about {
+    margin-top: 35px;
+}
+
+#skills,
+#goals {
+    margin-top: 35px;
 }
