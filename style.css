@@ -280,3 +280,19 @@ footer {
     margin-top: 10px;
     font-size: 14px;
 }
+
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: #0F766E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #115E59;
+}
