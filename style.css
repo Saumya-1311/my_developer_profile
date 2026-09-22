@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #F0FDFA ;
     font-family: Arial, sans-serif;
@@ -87,9 +91,13 @@ ul {
     }
 
     .navbar ul {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    .navbar a {
+    font-size: 14px;
     }
 
     .buttons {
@@ -121,7 +129,7 @@ ul {
 
     .divider::before,
     .divider::after {
-        width: 60px;
+        width: 45px;
     }
     
     button {
